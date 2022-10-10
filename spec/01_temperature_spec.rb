@@ -1,4 +1,4 @@
-require_relative '../lib/01_temperature'
+require_relative '../lib/01_temperature.rb'
 
 describe "temperature conversion functions" do
 
@@ -12,7 +12,7 @@ describe "temperature conversion functions" do
       expect(ftoc(212)).to eq(100)
     end
 
-    it "converts body temperature" do
+    it "converts body temperature" do  
       expect(ftoc(98.6)).to eq(37)
     end
 
